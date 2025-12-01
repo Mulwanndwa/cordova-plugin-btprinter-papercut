@@ -167,6 +167,17 @@ BTPrinter.printImageUrl(function(data){
 }, "Path String",'0');//path image, align
 ```
 
+```javascript
+ BTPrinter.cutPaper(
+	  function(success) {
+		console.log("Cut command sent successfully:", success);
+	  },
+	  function(error) {
+		console.error("Error sending cut command:", error);
+	  },
+	  cutCommandHex
+	);
+```
 In android tests with /storage/emulated/0/Pictures/myfolder/myimage.jpg - size max: 300x300px.
 
 ### Print image from base64 with align
